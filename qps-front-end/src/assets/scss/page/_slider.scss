@@ -2,7 +2,7 @@
 /*  4.1 - Slider CSS
 /*----------------------------------------*/
 
-// Slider Section 
+// Slider Section
 .slider-section{
     background-color: #eefbf3;
     height: 940px;
@@ -41,7 +41,7 @@
     }
 }
 
-// Slider Images 
+// Slider Images
 .slider-images{
     position: absolute;
     bottom: 0;
@@ -63,7 +63,7 @@
 }
 
 
-// Slider Content 
+// Slider Content
 .slider-content{
     max-width: 410px;
 
@@ -99,7 +99,7 @@
             &::before{
                 position: absolute;
                 content: '';
-                background-image: url(../images/shape/shape-4.png);
+                background-image: url(assets/images/shape/shape-4.png);
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -130,7 +130,7 @@
 }
 
 
-// Slider Courses Box 
+// Slider Courses Box
 .slider-courses-box{
     position: absolute;
     top: 38%;
@@ -231,7 +231,7 @@
     }
 }
 
-// Slider Rating Box 
+// Slider Rating Box
 .slider-rating-box{
     position: absolute;
     top: 24%;

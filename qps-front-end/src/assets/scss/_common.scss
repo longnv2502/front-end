@@ -156,7 +156,7 @@ img{
 
 .section-padding-02{
     padding-top: 80px;
-    
+
     @media #{$large-mobile}{
         padding-top: 60px;
     }
@@ -206,12 +206,12 @@ img{
     }
 
     &.shape-01{
-        & .main-title{    
-            & span{    
+        & .main-title{
+            & span{
                 &::before{
                     position: absolute;
                     content: '';
-                    background-image: url(../images/shape/shape-11.png);
+                    background-image: url(assets/images/shape/shape-11.png);
                     background-position: center center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ img{
                 &::before{
                     position: absolute;
                     content: '';
-                    background-image: url(../images/shape/shape-4.png);
+                    background-image: url(assets/images/shape/shape-4.png);
                     background-position: center center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -275,7 +275,7 @@ img{
                 &::before{
                     position: absolute;
                     content: '';
-                    background-image: url(../images/shape/shape-4.png);
+                    background-image: url(assets/images/shape/shape-4.png);
                     background-position: center center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -283,7 +283,7 @@ img{
                     height: 13px;
                     right: 0;
                     bottom: -11px;
-                    
+
                     @media #{$small-mobile}{
                         display: none;
                     }
@@ -322,7 +322,7 @@ img{
         max-width: 100%;
         opacity: 0;
         transition: $transition-base;
-        
+
         &.active{
             height: auto;
             visibility: visible;
@@ -332,7 +332,7 @@ img{
     }
 }
 
-/* Page Pagination */ 
+/* Page Pagination */
 .page-pagination{
     padding-top: 60px;
 
@@ -376,7 +376,7 @@ img{
 }
 
 
-/* Custom Animation */ 
+/* Custom Animation */
 
 .animation-round{
     animation: round 8s linear 0s infinite normal forwards;
@@ -398,7 +398,7 @@ img{
     0% {
       transform: translateX(0);
     }
-  
+
     50% {
         transform: translateX(-40px);
     }
@@ -415,7 +415,7 @@ img{
     0% {
       transform: translateX(0);
     }
-  
+
     50% {
         transform: translateX(40px);
     }
@@ -432,7 +432,7 @@ img{
     0% {
       transform: translateY(0);
     }
-  
+
     50% {
         transform: translateY(-40px);
     }
@@ -449,7 +449,7 @@ img{
     0% {
       transform: translateY(0);
     }
-  
+
     50% {
         transform: translateY(40px);
     }

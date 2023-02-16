@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b67464b5-1773-4d66-a0e2-7ff180a67d66" name="Changes" comment="" />
+    <list default="true" id="b67464b5-1773-4d66-a0e2-7ff180a67d66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../qps-front-end/src/assets/php/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qps-front-end/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../qps-front-end/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qps-front-end/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../qps-front-end/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qps-front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../qps-front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qps-front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../qps-front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qps-front-end/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../qps-front-end/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qps-front-end/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../qps-front-end/src/styles.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2LkrxrVFppGQelPBvT8wNlgvuwV" />
   <component name="ProjectViewState">
@@ -20,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/LONGNV/OneDrive - 1gtfy6/Documents/FPT_University/23_SPR/SWD392/Project/Front-end/edule",
+    "last_opened_file_path": "D:/quiz-practice/edule",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -37,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676426170046</updated>
       <workItem from="1676426171125" duration="914000" />
+      <workItem from="1676526564993" duration="2065000" />
     </task>
     <servers />
   </component>

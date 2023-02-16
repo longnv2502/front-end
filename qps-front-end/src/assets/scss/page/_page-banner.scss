@@ -15,7 +15,7 @@
     @media #{$tablet-device, $large-mobile}{
         height: 400px;
         padding-top: 103px;
-    }    
+    }
 
     & .shape-1{
         position: absolute;
@@ -83,17 +83,17 @@
     }
 }
 
-// Page Banner Content 
+// Page Banner Content
 .page-banner-content{
     max-width: 570px;
 
     @media #{$desktop-device}{
         max-width: 500px;
     }
-    @media #{$tablet-device, $large-mobile}{  
+    @media #{$tablet-device, $large-mobile}{
         max-width: 360px;
     }
-    
+
     & .breadcrumb{
         margin-bottom: 0;
 
@@ -136,7 +136,7 @@
         padding-bottom: 15px;
         line-height: 1.6;
 
-        @media #{$tablet-device, $large-mobile}{  
+        @media #{$tablet-device, $large-mobile}{
             font-size: 30px;
         }
         @media #{$small-mobile}{
@@ -150,7 +150,7 @@
             &::before{
                 position: absolute;
                 content: '';
-                background-image: url(../images/shape/shape-4.png);
+                background-image: url(assets/images/shape/shape-4.png);
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -160,7 +160,7 @@
                 bottom: -10px;
                 transform: translateX(-50%);
 
-                @media #{$tablet-device, $large-mobile}{                    
+                @media #{$tablet-device, $large-mobile}{
                     display: none;
                 }
             }
@@ -168,7 +168,7 @@
     }
 }
 
-// Shape Icon Box 
+// Shape Icon Box
 .shape-icon-box{
     position: absolute;
     top: 47%;
@@ -243,7 +243,7 @@
                 color: $white;
                 display: block;
                 line-height: 1;
-    
+
                 @media #{$large-mobile}{
                     font-size: 40px;
                 }

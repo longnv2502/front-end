@@ -99,7 +99,7 @@
             &::before{
                 position: absolute;
                 content: '';
-                background-image: url(../images/shape/shape-4.png);
+                background-image: url(assets/images/shape/shape-4.png);
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -148,15 +148,15 @@
     padding: 30px;
     margin-top: 30px;
     transition: $transition-base;
-    
+
     @media #{$desktop-device}{
         padding: 20px;
     }
-    
+
     & .item-icon-title{
         display: flex;
         align-items: center;
-        
+
         & .item-icon{
             & i{
                 width: 80px;
@@ -169,7 +169,7 @@
                 font-size: 36px;
                 display: inline-block;
                 transition: $transition-base;
-                
+
                 @media #{$desktop-device, $small-mobile}{
                     width: 60px;
                     height: 60px;
@@ -200,9 +200,9 @@
     &:hover{
         border-color: $primary;
 
-        & .item-icon-title{    
+        & .item-icon-title{
             & .item-icon{
-                & i{                   
+                & i{
                     background-color: $primary;
                     color: $white;
                 }

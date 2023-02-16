@@ -3,7 +3,7 @@
 /*----------------------------------------*/
 
 
-// Contact Map Wrapper 
+// Contact Map Wrapper
 .contact-map-wrapper{
     & iframe{
         display: block;
@@ -29,7 +29,7 @@
     @media #{$desktop-device, $large-mobile}{
         padding: 40px;
         padding-top: 0;
-    }  
+    }
     @media #{$small-mobile}{
         padding: 30px;
         padding-top: 0;
@@ -43,9 +43,9 @@
     border-radius: 15px;
     margin-top: 50px;
     position: relative;
-    
+
     @media #{$desktop-device}{
-        padding: 50px 30px;        
+        padding: 50px 30px;
     }
     @media #{$large-mobile}{
         padding: 40px 30px;
@@ -98,7 +98,7 @@
         @media #{$small-mobile}{
             margin: 0 auto;
         }
-        
+
         & i{
             width: 70px;
             height: 70px;
@@ -154,8 +154,8 @@
     }
 
     &:hover{
-        & .info-icon{            
-            & i{                
+        & .info-icon{
+            & i{
                 background-color: $primary;
                 border-color: $primary;
                 color: $white;
@@ -202,7 +202,7 @@
             &::before{
                 position: absolute;
                 content: '';
-                background-image: url(../images/shape/shape-4.png);
+                background-image: url(assets/images/shape/shape-4.png);
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -211,7 +211,7 @@
                 left: 50%;
                 bottom: -10px;
                 transform: translateX(-50%);
-                
+
                 @media #{$small-mobile}{
                     display: none;
                 }
@@ -240,7 +240,7 @@
             &.btn-outline{
                 border: 1px solid rgba($primary, 0.2);
                 line-height: 58px;
-                
+
                 &:hover{
                     background-color: $primary;
                     border-color: $primary;
@@ -260,7 +260,7 @@
     }
 }
 
-// Form Message 
+// Form Message
 .form-message{
     margin-bottom: 0;
 

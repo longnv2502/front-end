@@ -8,7 +8,7 @@
 }
 
 
-// Single Testimonial 
+// Single Testimonial
 .single-testimonial{
     text-align: center;
     border: 1px solid rgba($primary, 0.2);
@@ -24,7 +24,7 @@
     &::before{
         position: absolute;
         content: '';
-        background-image: url(../images/shape/shape-18.png);
+        background-image: url(assets/images/shape/shape-18.png);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;

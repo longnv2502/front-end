@@ -2,7 +2,7 @@
 /*  3.2 - Header Main CSS
 /*----------------------------------------*/
 
-// Header Wrapper 
+// Header Wrapper
 .header-main-wrapper{
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@
     }
 }
 
-// Header Logo 
+// Header Logo
 .header-logo{
     & a{
         & img{
@@ -41,7 +41,7 @@
     }
 }
 
-// Header Menu 
+// Header Menu
 .header-menu{
     & ul{
         display: flex;
@@ -71,7 +71,7 @@
                 &::before{
                     position: absolute;
                     content: '';
-                    background-image: url(../images/shape/shape-3.png);
+                    background-image: url(assets/images/shape/shape-3.png);
                     width: 70px;
                     height: 5px;
                     background-position: center center;
@@ -103,7 +103,7 @@
             & ul{
                 display: block;
             }
-            
+
             &:hover{
                 & > .sub-menu,
                 & > .mega-sub-menu{
@@ -129,7 +129,7 @@
         }
     }
 
-    // Sub Menu 
+    // Sub Menu
     & .sub-menu{
         position: absolute;
         width: 225px;
@@ -191,7 +191,7 @@
         }
     }
 
-    // Mega Sub Menu 
+    // Mega Sub Menu
     & .mega-sub-menu{
         position: absolute;
         top: 110%;
@@ -290,8 +290,8 @@
                 font-weight: 500;
                 display: block;
                 padding-bottom: 20px;
-                border-bottom: 1px solid #ebebeb;                   
-                
+                border-bottom: 1px solid #ebebeb;
+
                 &::after{
                     display: none;
                 }
@@ -316,7 +316,7 @@
                         line-height: 32px;
                         font-weight: 400;
                         font-size: 14px;
-                        display: block;                        
+                        display: block;
                     }
 
                     &:hover{
@@ -341,7 +341,7 @@
     & ul{
         display: flex;
         align-items: center;
-        
+
         & li{
             margin-right: 30px;
 
@@ -397,7 +397,7 @@
         background: none;
         border: 0;
         padding: 0;
-        
+
         & span{
             width: 23px;
             height: 2px;
@@ -412,7 +412,7 @@
 }
 
 
-// Header Sticky 
+// Header Sticky
 .sticky{
     position: fixed;
     top: 0;
@@ -421,8 +421,8 @@
     z-index: 999;
     animation: sticky 1s;
     box-shadow: 2px 4px 8px rgba($dark, 0.15);
-    background-color: $white;    
-    padding: 0;   
+    background-color: $white;
+    padding: 0;
 
     & .header-main-wrapper{
         margin-top: 0;

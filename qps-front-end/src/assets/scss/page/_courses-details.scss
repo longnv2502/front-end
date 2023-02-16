@@ -6,7 +6,7 @@
 // Courses Details
 .courses-details{
     margin-top: 50px;
-    
+
     & .courses-details-images{
         overflow: hidden;
         border-radius: 10px;
@@ -308,27 +308,27 @@
                         color: #d0d0d0;
                         font-size: 14px;
                         letter-spacing: 2px;
-    
+
                         @media #{$desktop-device}{
                             font-size: 13px;
                             letter-spacing: 1px;
                         }
                     }
-    
+
                     & .rating-bar{
                         position: absolute;
                         top: 0;
                         left: 0;
                         height: 100%;
                         overflow: hidden;
-    
+
                         &::before{
                             content: '\f000 \f000 \f000 \f000 \f000';
                             font-family: IcoFont;
                             color: #ffba00;
                             font-size: 14px;
                             letter-spacing: 2px;
-    
+
                             @media #{$desktop-device}{
                                 font-size: 13px;
                                 letter-spacing: 1px;
@@ -348,9 +348,9 @@
                         background-color: $primary;
                     }
                 }
-            }            
+            }
         }
-        
+
         & .tab-reviews{
             margin-top: 25px;
 
@@ -367,7 +367,7 @@
                 &::before{
                     position: absolute;
                     content: '';
-                    background-image: url(../images/shape/shape-18.png);
+                    background-image: url(assets/images/shape/shape-18.png);
                     background-position: center center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -375,7 +375,7 @@
                     height: 172px;
                     right: 100px;
                     top: -50px;
-            
+
                     @media #{$small-mobile}{
                         right: 50px;
                     }
@@ -443,20 +443,20 @@
                             position: relative;
                             margin-top: 5px;
                             display: inline-block;
-        
+
                             &::before{
                                 content: '\f000 \f000 \f000 \f000 \f000';
                                 font-family: IcoFont;
                                 color: #d0d0d0;
                                 font-size: 14px;
                                 letter-spacing: 2px;
-            
+
                                 @media #{$desktop-device}{
                                     font-size: 13px;
                                     letter-spacing: 1px;
                                 }
                             }
-            
+
                             & .rating-bar{
                                 position: absolute;
                                 top: 0;
@@ -464,14 +464,14 @@
                                 height: 100%;
                                 overflow: hidden;
                                 display: inline-block;
-            
+
                                 &::before{
                                     content: '\f000 \f000 \f000 \f000 \f000';
                                     font-family: IcoFont;
                                     color: #ffba00;
                                     font-size: 14px;
                                     letter-spacing: 2px;
-            
+
                                     @media #{$desktop-device}{
                                         font-size: 13px;
                                         letter-spacing: 1px;
@@ -500,7 +500,7 @@
 }
 
 
-// Reviews Active 
+// Reviews Active
 .reviews-active{
     & .swiper-pagination{
         position: relative;
