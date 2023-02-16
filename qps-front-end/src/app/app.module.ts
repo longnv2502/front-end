@@ -22,6 +22,16 @@ import { PageBannerComponent } from './shared/layout/component/page-banner/page-
 import { PageTestimonialComponent } from './shared/layout/component/page-testimonial/page-testimonial.component';
 import { PageNotFoundComponent } from './shared/error/page-not-found/page-not-found.component';
 import { PageForbiddenComponent } from './shared/error/page-forbidden/page-forbidden.component';
+import { CourseComponent } from './course/course.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { CourseListComponent } from './course/course-list/course-list.component';
+import { CourseDetailComponent } from './course/course-detail/course-detail.component';
+import { BlogListComponent } from './blog/blog-list/blog-list.component';
+import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
+import { BlogSidebarComponent } from './blog/blog-sidebar/blog-sidebar.component';
+import { ContactMapComponent } from './contact/contact-map/contact-map.component';
+import { ContactInfoComponent } from './contact/contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +54,17 @@ import { PageForbiddenComponent } from './shared/error/page-forbidden/page-forbi
     PageBannerComponent,
     PageTestimonialComponent,
     PageNotFoundComponent,
-    PageForbiddenComponent
+    PageForbiddenComponent,
+    CourseComponent,
+    BlogComponent,
+    ContactComponent,
+    CourseListComponent,
+    CourseDetailComponent,
+    BlogListComponent,
+    BlogDetailComponent,
+    BlogSidebarComponent,
+    ContactMapComponent,
+    ContactInfoComponent
   ],
   imports: [
     BrowserModule,
