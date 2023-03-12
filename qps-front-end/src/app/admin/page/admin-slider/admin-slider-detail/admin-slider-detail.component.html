@@ -1,0 +1,82 @@
+<!--&lt;!&ndash; Page Content Wrapper Start &ndash;&gt;-->
+<!--<div class="page-content-wrapper">-->
+<!--  <div class="container-fluid custom-container">-->
+<!--    <div class="right">-->
+<!--      <div class="form-group" style="margin-bottom: 20px">-->
+<!--        <label style="font-weight: bold" class="col-md-4 control-label" for="filebutton">SLIDER IMAGE</label>-->
+<!--        <div class="col-md-4">-->
+<!--          <img class="thumbnail img-responsive" src="${s.image}" alt="">-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Text input&ndash;&gt;-->
+<!--      <div class="form-group" style="margin-bottom: 20px">-->
+<!--        <label style="font-weight: bold" class="col-md-4 control-label"-->
+<!--               for="name">SLIDER-->
+<!--          NAME</label>-->
+<!--        <div class="single-form col-md-4" style="margin-bottom: 20px">-->
+<!--          <h7>${s.title}</h7>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Textarea &ndash;&gt;-->
+<!--      <div class="form-group" style="margin-bottom: 20px">-->
+<!--        <label style="font-weight: bold" class="col-md-4 control-label"-->
+<!--               for="subject_description">SLIDER-->
+<!--          CONTENT</label>-->
+<!--        <div class="single-form col-md-4" style="margin-bottom: 20px">-->
+<!--          <h7>${s.content}</h7>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="form-group" style="margin-bottom: 20px">-->
+<!--        <label style="font-weight: bold" class="col-md-4 control-label"-->
+<!--               for="backlink">SLIDER-->
+<!--          BACKLINK</label>-->
+<!--        <div class="single-form col-md-4" style="margin-bottom: 20px">-->
+<!--          <c:if test="${empty s.backlink}">-->
+<!--            <h7 style="color: red">This Slider has no Backlink</h7>-->
+<!--          </c:if>-->
+<!--          <c:if test="${not empty s.backlink}">-->
+<!--            <h7>${s.backlink}</h7>-->
+<!--          </c:if>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Select Basic &ndash;&gt;-->
+<!--      <div class="form-group" style="margin-bottom: 20px">-->
+<!--        <label style="font-weight: bold" class="col-md-4 control-label"-->
+<!--               for="status">SLIDER STATUS</label>-->
+<!--        <div class="single-form col-md-4" style="margin-bottom: 20px">-->
+<!--          <c:if test="${s.status==true}">-->
+<!--            <h7 style="color: red">Active</h7>-->
+<!--          </c:if>-->
+<!--          <c:if test="${s.status==false}">-->
+<!--            <h7 style="color: red">Inactive</h7>-->
+<!--          </c:if>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="form-group" style="margin-bottom: 20px">-->
+<!--        <label style="font-weight: bold" class="col-md-4 control-label"-->
+<!--               for="name">MODIFIED LAST BY</label>-->
+<!--        <div class="single-form col-md-4" style="margin-bottom: 20px">-->
+<!--          <h7>${s.user.name}</h7>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Button &ndash;&gt;-->
+<!--      <div class="form-group">-->
+<!--        <label class="col-md-4 control-label" for="singlebutton"></label>-->
+<!--        <div class="single-form col-md-4">-->
+<!--          <button-->
+<!--            onclick="window.location.href = '${pageContext.request.contextPath}/marketing/slider/edit?id=${s.id}';"-->
+<!--            id="singlebutton" name="singlebutton" class="btn btn-primary">Edit-->
+<!--            Slider-->
+<!--          </button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Page Content Wrapper End &ndash;&gt;-->

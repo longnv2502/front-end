@@ -1,0 +1,24 @@
+.form-group {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.control-label {
+  width: 340px;
+}
+
+#featured {
+  width: 20px;
+  height: 20px;
+}
+
+.form-horizontal {
+  color: rgb(33 40 50);
+  font-weight: 500;
+}
+
+#thumbnail-preview {
+  border-radius: 15px;
+}

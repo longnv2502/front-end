@@ -1,0 +1,139 @@
+<!--&lt;!&ndash; Page Content Wrapper Start &ndash;&gt;-->
+<!--<div class="page-content-wrapper">-->
+<!--  <div class="container-fluid custom-container">-->
+<!--    &lt;!&ndash; Admin Courses Tab Start &ndash;&gt;-->
+<!--    <div class="admin-courses-tab">-->
+<!--      <h3 class="title">Sliders</h3>-->
+<!--      <div class="courses-tab-wrapper">-->
+<!--        <form action="./sliders" method="GET">-->
+<!--          <div class="search-filter">-->
+<!--            <div class="tab-btn" style="display: flex">-->
+<!--              <input type="text" class="search-input" placeholder="Search here"-->
+<!--                     name="keyWord" value="${keyWord}">-->
+<!--              <input class="search-button" type="submit" value="Search"/>-->
+<!--            </div>-->
+<!--            <div class="courses-select">-->
+<!--              <select name="type">-->
+<!--                <option disabled selected value> Sort by Type</option>-->
+<!--                <option value="1">Search By Title</option>-->
+<!--                <option value="0">Search By Backlink</option>-->
+<!--              </select>-->
+<!--            </div>-->
+<!--            <div class="courses-select" style="margin-left: 20px">-->
+<!--              <select onchange="this.form.submit()" name="status">-->
+<!--                <option disabled selected value> Sort by Status-->
+<!--                </option>-->
+<!--                <option value="1">Active</option>-->
+<!--                <option value="0">Inactive</option>-->
+<!--              </select>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </form>-->
+<!--        <div class="tab-btn">-->
+<!--          <a href="${pageContext.request.contextPath}/marketing/sliders"-->
+<!--             class="btn btn-primary btn-hover-dark">Clear</a>-->
+<!--        </div>-->
+<!--        <div class="tab-btn">-->
+<!--          <a href="${pageContext.request.contextPath}/marketing/slider/add"-->
+<!--             class="btn btn-primary btn-hover-dark">New Slider</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Admin Courses Tab End &ndash;&gt;-->
+<!--    <c:if test="${empty slider}">-->
+<!--      <div class="admin-courses-tab-content">-->
+<!--        <div class="tab-content">-->
+<!--          <div class="tab-pane fade show active">-->
+<!--            <div class="courses-item">-->
+<!--              <div class="content-title"-->
+<!--                   style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0">-->
+<!--                <h3 class="title"><a-->
+<!--                  style="text-align: center; font-size: 140%; white-space: nowrap; margin-left: 800px;">There is nothing-->
+<!--                  that matched your search</a></h3>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </c:if>-->
+
+<!--    &lt;!&ndash; Admin Courses Tab Content Start &ndash;&gt;-->
+<!--    <div class="admin-courses-tab-content">-->
+<!--      <div class="tab-content">-->
+<!--        <div class="tab-pane fade show active">-->
+<!--          &lt;!&ndash; Courses Item Start &ndash;&gt;-->
+<!--          <c:forEach items="${slider}" var="s">-->
+<!--            <div class="courses-item">-->
+<!--              <div class="item-thumb">-->
+<!--                <img src="${s.image}" alt="Slider Image">-->
+<!--              </div>-->
+
+<!--              <div class="content-title">-->
+<!--                <div class="meta">-->
+<!--                  <c:if test="${s.status}">-->
+<!--                    <a href="#" class="action">Active</a>-->
+<!--                  </c:if>-->
+<!--                  <c:if test="${!s.status}">-->
+<!--                    <a href="#" class="action">Inactive</a>-->
+<!--                  </c:if>-->
+<!--                </div>-->
+<!--                <h3 class="title"><a-->
+<!--                  href="${pageContext.request.contextPath}/marketing/slider?id=${s.id}">${s.title}</a>-->
+<!--                </h3>-->
+<!--              </div>-->
+
+<!--              <div class="content-wrapper">-->
+
+<!--                <div class="content-box" style="width: 270px">-->
+<!--                  <p>Backlink</p>-->
+<!--                  <span class="count"><a-->
+<!--                    href="${s.backlink}">${s.backlink}</a></span>-->
+<!--                </div>-->
+<!--                <div class="content-box" style="width: 300px">-->
+<!--                  <p>Note</p>-->
+<!--                  <span class="count">${s.content}</span>-->
+<!--                </div>-->
+<!--                <div class="tab-btn">-->
+<!--                  <a href="${pageContext.request.contextPath}/marketing/slider/edit?id=${s.id}"-->
+<!--                     class="btn btn-primary btn-hover-dark">Edit</a>-->
+<!--                </div>-->
+<!--                <div class="tab-btn">-->
+<!--                  <c:if test="${s.status==true}"><a-->
+<!--                    href="${pageContext.request.contextPath}/marketing/slider/status?id=${s.id}"-->
+<!--                    class="btn btn-primary btn-hover-dark">Deactive</a>-->
+<!--                  </c:if>-->
+<!--                  <c:if test="${s.status==false}"><a-->
+<!--                    href="${pageContext.request.contextPath}/marketing/slider/status?id=${s.id}"-->
+<!--                    class="btn btn-primary btn-hover-dark">Active</a>-->
+<!--                  </c:if>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </c:forEach>-->
+<!--          &lt;!&ndash; Courses Item End &ndash;&gt;-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Admin Courses Tab Content End &ndash;&gt;-->
+<!--    &lt;!&ndash; Courses Resources End &ndash;&gt;-->
+<!--    <div class="page-pagination">-->
+<!--      <ul class="pagination justify-content-center">-->
+<!--        <c:set var="page" value="${page}"/>-->
+<!--        <c:set var="num" value="${num}"/>-->
+<!--        <c:if test="${page > 1}">-->
+<!--          <li class=""><a data="1" class="pagination-link">First</a></li>-->
+<!--        </c:if>-->
+<!--        <c:if test="${page >= 0}">-->
+<!--          <c:forEach begin="${1}" end="${num}" var="i">-->
+<!--            <li class=""><a data="${i}" class="pagination-link ${i==page?"-->
+<!--                            active":""}">${i}</a></li>-->
+<!--          </c:forEach>-->
+<!--        </c:if>-->
+<!--        <c:if test="${page < num}">-->
+<!--          <li class=""><a data="${num}" class="pagination-link">Last</a></li>-->
+<!--        </c:if>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Page Content Wrapper End &ndash;&gt;-->

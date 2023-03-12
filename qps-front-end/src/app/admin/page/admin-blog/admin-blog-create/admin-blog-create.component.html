@@ -1,0 +1,109 @@
+<!--&lt;!&ndash; Page Content Wrapper Start &ndash;&gt;-->
+<!--<div class="page-content-wrapper">-->
+<!--  <div class="container-fluid custom-container">-->
+<!--    <div class="right">-->
+<!--      <div class="form-group">-->
+<!--        <label class="col-md-4 control-label"></label>-->
+<!--        <div class="col-md-2">-->
+<!--          <c:if test="${not empty message}">-->
+<!--            <div class="alert alert-${alert}">-->
+<!--              ${message}-->
+<!--            </div>-->
+<!--          </c:if>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <form action="./add" method="POST" id="form_post-add" class="form-horizontal"-->
+<!--            enctype="multipart/form-data">-->
+<!--        &lt;!&ndash; Text input&ndash;&gt;-->
+<!--        <div class="form-group">-->
+<!--          <label class="col-md-4 control-label" for="title">POST TITTLE</label>-->
+<!--          <div class="single-form col-md-4 ">-->
+<!--            <input id="title" name="title" placeholder="POST TITTLE"-->
+<!--                   class="form-control input-md" type="text">-->
+<!--            <div id="title-error"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+
+<!--        &lt;!&ndash; Select Basic &ndash;&gt;-->
+<!--        <div class="form-group posts-select">-->
+<!--          <label class="col-md-4 control-label" for="category">POST CATEGORY</label>-->
+<!--          <div class="single-form col-md-4">-->
+<!--            <select id="category" name="category" class="form-control">-->
+<!--              <option disabled selected> &#45;&#45; Category &#45;&#45;</option>-->
+<!--              <c:forEach items="${categorys}" var="c">-->
+<!--                <option-->
+<!--                <c:if test="${c.getId() == categoryID}">-->
+<!--                  selected="selected"-->
+<!--                </c:if>-->
+<!--                value="${c.getId()}">${c.getName()}</option>-->
+<!--              </c:forEach>-->
+<!--            </select>-->
+<!--            <div id="category-error"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Select Basic &ndash;&gt;-->
+<!--        <div class="form-group courses-select">-->
+<!--          <label class="col-md-4 control-label" for="status">STATUS</label>-->
+<!--          <div class="single-form col-md-4">-->
+<!--            <select id="status" name="status" class="form-control">-->
+<!--              <option disabled selected> &#45;&#45; Status &#45;&#45;</option>-->
+<!--              <option value="1">Active</option>-->
+<!--              <option value="0">Inactive</option>-->
+<!--            </select>-->
+<!--            <div id="status-error"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; File Button &ndash;&gt;-->
+<!--        <div class="form-group">-->
+<!--          <label class="col-md-4 control-label" for="thumbnail">THUMBNAIL-->
+<!--            IMAGE</label>-->
+<!--          <div class="single-form col-md-4">-->
+<!--            <input id="thumbnail" name="thumbnail" data-can-empty="false"-->
+<!--                   class="form-control" type="file">-->
+<!--            <div id="thumbnail-error"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--          <label class="col-md-4 control-label"></label>-->
+<!--          <div class="col-md-4 ">-->
+<!--            <img id="thumbnail-preview" class="thumbnail img-responsive d-none" src=""-->
+<!--                 alt="">-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Textarea &ndash;&gt;-->
+<!--        <div class="form-group">-->
+<!--          <label class="col-md-4 control-label" for="brief">POST BRIEF</label>-->
+<!--          <div class="single-form col-md-4">-->
+<!--            <textarea class="form-control" id="brief" name="brief"></textarea>-->
+<!--            <div id="brief-error"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Textarea &ndash;&gt;-->
+<!--        <div class="form-group">-->
+<!--          <label class="col-md-4 control-label" for="content">POST CONTENT</label>-->
+<!--          <div class="single-form col-md-4">-->
+<!--            <textarea class="form-control" id="content" name="content"></textarea>-->
+<!--            <div id="content-error"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; Button &ndash;&gt;-->
+<!--        <div class="form-group">-->
+<!--          <label class="col-md-4 control-label" for="btn-submit"></label>-->
+<!--          <div class="single-form col-md-4">-->
+<!--            <button id="btn-submit" name="btn-submit" class="btn btn-primary">ADD-->
+<!--              POST-->
+<!--            </button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Page Content Wrapper End &ndash;&gt;-->
